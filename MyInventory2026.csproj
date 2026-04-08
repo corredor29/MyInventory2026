@@ -25,6 +25,7 @@
     <Folder Include="src\shared\" />
     <Folder Include="src\shared\configuration\" />
     <Folder Include="src\shared\context\" />
+    <Folder Include="src\shared\contracts\" />
     <Folder Include="src\shared\helpers\" />
   </ItemGroup>
 
