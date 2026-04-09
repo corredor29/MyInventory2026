@@ -17,14 +17,5 @@ public record class ProductsCodeInv
         
         return new ProductsCodeInv(value.Trim());    
     }
-    public async Task ValidarCodeInvUnico(string value)
-    {
-        bool Existe = await _context.Products
-            .AnyAsync(p => p.CodeInv == value);
 
-        if (Existe)
-        {
-            throw new Exception("El CodeInv ya existe");
-        }
-    }
 }
